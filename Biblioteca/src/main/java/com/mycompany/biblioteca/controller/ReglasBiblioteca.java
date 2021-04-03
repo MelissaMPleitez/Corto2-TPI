@@ -9,8 +9,7 @@ import com.mycompany.biblioteca.boundary.AlumnoFacade;
 import com.mycompany.biblioteca.boundary.ProfesorFacade;
 import com.mycompany.biblioteca.boundary.UsuarioFacade;
 import com.mycompany.biblioteca.services.BibliotecaException;
-import java.io.Serializable;
-import sun.rmi.runtime.Log;
+import java.util.List;
 
 /**
  *
@@ -62,4 +61,6 @@ public class ReglasBiblioteca {
             throw new BibliotecaException(message);
         }
     }
+    
+   
 }
