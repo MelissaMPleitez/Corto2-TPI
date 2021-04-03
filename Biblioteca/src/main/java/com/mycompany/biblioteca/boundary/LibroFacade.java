@@ -6,6 +6,7 @@
 package com.mycompany.biblioteca.boundary;
 
 import com.mycompany.biblioteca.entity.Libro;
+import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -26,6 +27,16 @@ public class LibroFacade extends AbstractFacade<Libro>{
     
     public LibroFacade() {
         super(Libro.class);
+    }
+    
+    public interface LibroInterface{
+        List<LibroFacade> listaLibros();
+        LibroFacade recLibro(Long libroId);
+        EjemplarFacade recEjemplar(Long ejemplarId);
+        LibroFacade buscaLibroIsbn(String isbn);
+        public List<LibroFacade> buscaLibros (String keyword);
+        public List<LibroFacade> listaLibrosTitulo();
+        public List<LibroFacade> listaLibrosTitulo(int firstResult, int maxResults);
     }
 
 }

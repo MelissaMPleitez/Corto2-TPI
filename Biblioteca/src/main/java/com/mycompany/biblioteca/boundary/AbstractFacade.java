@@ -11,6 +11,7 @@ import javax.persistence.EntityManager;
 /**
  *
  * @author Melissa
+ * @param <T>
  */
 
 //CRUD para las tablas de la base de datos

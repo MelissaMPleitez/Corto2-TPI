@@ -5,31 +5,33 @@
  */
 package com.mycompany.biblioteca.boundary;
 
-import com.mycompany.biblioteca.entity.Usuario;
-import javax.ejb.Stateless;
+import javax.persistence.DiscriminatorValue;
+import javax.persistence.Entity;
 import javax.persistence.EntityManager;
+import javax.persistence.Id;
 import javax.persistence.PersistenceContext;
-
 /**
  *
  * @author Melissa
  */
-@Stateless
-public abstract class UsuarioFacade extends AbstractFacade<Usuario>{
+@Entity
+@DiscriminatorValue(value = "PROFESOR")
+public class ProfesorFacade extends UsuarioFacade{
+    private static final long serialVersionUID = 1L;
     @PersistenceContext(unitName = "com.mycompany_Biblioteca_jar_1.0-SNAPSHOTPU")
+    @Id
     private EntityManager em;
 
     @Override
     protected EntityManager getEntityManager() {
         return em;
     }
-    
-    public UsuarioFacade() {
-        super(Usuario.class);
+
+    public EntityManager getEm() {
+        return em;
     }
-    
-    public interface UsuarioBean{
-        UsuarioFacade recuperacionUsuario(Long idUsuario);
-        UsuarioFacade buscaUsuarioLogin(String login);
+
+    public void setEm(EntityManager em) {
+        this.em = em;
     }
 }
