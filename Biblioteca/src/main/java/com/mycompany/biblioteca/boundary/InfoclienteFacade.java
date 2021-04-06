@@ -27,4 +27,8 @@ public class InfoclienteFacade extends AbstractFacade<Infocliente>{
     public InfoclienteFacade() {
         super(Infocliente.class);
     }
+
+    void setEntityManager() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

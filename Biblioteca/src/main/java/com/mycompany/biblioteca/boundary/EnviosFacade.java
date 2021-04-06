@@ -27,4 +27,8 @@ public class EnviosFacade extends AbstractFacade<Envios>{
     public EnviosFacade() {
         super(Envios.class);
     }
+
+    void setEntityManager() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

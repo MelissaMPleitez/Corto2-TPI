@@ -27,4 +27,7 @@ public class MultaFacade extends AbstractFacade<Multa>{
     public MultaFacade() {
         super(Multa.class);
     }
+    void setEntityManager() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

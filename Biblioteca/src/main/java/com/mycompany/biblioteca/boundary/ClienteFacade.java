@@ -24,6 +24,11 @@ public class ClienteFacade extends AbstractFacade<Cliente>{
     protected EntityManager getEntityManager() {
         return em;
     }
+    
+    
+    protected EntityManager setEntityManager() {
+        return em;
+    }
 
     public ClienteFacade() {
         super(Cliente.class);

@@ -15,7 +15,7 @@ import javax.persistence.PersistenceContext;
  * @author Melissa
  */
 @Stateless
-public abstract class UsuarioFacade extends AbstractFacade<Usuario>{
+public class UsuarioFacade extends AbstractFacade<Usuario>{
     @PersistenceContext(unitName = "com.mycompany_Biblioteca_jar_1.0-SNAPSHOTPU")
     private EntityManager em;
 
@@ -26,6 +26,10 @@ public abstract class UsuarioFacade extends AbstractFacade<Usuario>{
     
     public UsuarioFacade() {
         super(Usuario.class);
+    }
+
+    void setEntityManager() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     public interface UsuarioBean{

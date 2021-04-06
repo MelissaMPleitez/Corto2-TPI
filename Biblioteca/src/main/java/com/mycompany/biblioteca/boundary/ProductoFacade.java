@@ -27,4 +27,8 @@ public class ProductoFacade extends AbstractFacade<Producto>{
     public ProductoFacade() {
         super(Producto.class);
     }
+
+    void setEntityManager() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

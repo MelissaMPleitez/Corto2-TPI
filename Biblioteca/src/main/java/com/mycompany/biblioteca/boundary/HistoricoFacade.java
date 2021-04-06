@@ -27,4 +27,9 @@ public class HistoricoFacade extends AbstractFacade<Historico>{
     public HistoricoFacade() {
         super(Historico.class);
     }
+
+    void setEntityManager() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 }

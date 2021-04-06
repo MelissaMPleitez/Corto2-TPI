@@ -28,6 +28,10 @@ public class LibroFacade extends AbstractFacade<Libro>{
     public LibroFacade() {
         super(Libro.class);
     }
+
+    void setEntityManager() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     public interface LibroInterface{
         List<LibroFacade> listaLibros();

@@ -27,4 +27,8 @@ public class EjemplarFacade extends AbstractFacade<Ejemplar>{
     public EjemplarFacade() {
         super(Ejemplar.class);
     }
+
+    void setEntityManager() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

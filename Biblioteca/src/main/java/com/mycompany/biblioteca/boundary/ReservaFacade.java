@@ -20,7 +20,11 @@ public class ReservaFacade extends AbstractFacade<Reserva>{
     private EntityManager em;
 
     @Override
-    protected EntityManager getEntityManager() {
+    public EntityManager getEntityManager() {
+        return em;
+    }
+    
+    public EntityManager setEntityManager() {
         return em;
     }
     
